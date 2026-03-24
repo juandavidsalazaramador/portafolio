@@ -1,0 +1,10 @@
+*{
+    
+}
+body{
+    front-family: Arial, sans-serif;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

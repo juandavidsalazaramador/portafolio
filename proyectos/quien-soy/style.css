@@ -1,0 +1,151 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#444;
+}
+
+
+
+header{
+background:#e65908;
+color:white;
+padding: 30px 80px;
+}
+
+.logo{
+float:left;
+}
+
+nav{
+float:right;
+}
+
+header h1{
+font-size:20px;
+font-weight:500;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+}
+
+nav a:hover{
+color:#ebd65f;
+}
+
+
+
+
+.about{
+padding:80px 120px;
+background:white;
+overflow:hidden;
+}
+
+.about img{
+float:left;
+width:220px;
+margin-right:60px;
+border-radius:8px;
+}
+
+.about-text{
+max-width:450px;
+}
+
+.about-text h2{
+color:#ff5722;
+font-size:38px;
+margin-bottom:15px;
+}
+
+.about-text p{
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.about-text button{
+background:#ff5722;
+color:white;
+border:none;
+padding:10px 12px;
+border-radius:4px;
+cursor:pointer;
+}
+
+
+
+.orange-section{
+background:#ff5722;
+padding:80px;
+text-align:center;
+}
+
+.orange-section img{
+width:180px;
+border-radius:50%;
+}
+
+
+
+.services{
+padding:80px 120px;
+text-align:center;
+background:#f56607;
+}
+
+.services h2{
+font-size:40px;
+margin-bottom:40px;
+color:#fcfcfc;
+}
+
+.cards{
+overflow:hidden;
+}
+
+.card{
+background:white;
+width:220px;
+float:left;
+margin:15px;
+border-radius:5px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:140px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card p{
+font-size:14px;
+padding:0 10px 20px;
+color:#6b6b6b;
+}
+
+/* FOOTER */
+
+footer{
+background:#3c3f45;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}

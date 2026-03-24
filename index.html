@@ -1,61 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Mis Proyectos | Portafolio de Estudiante</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1 class=titulos id="titulo">Hoja de vida</h1>
-    <div id="contenedor">
-    <img src="https://www.tvline.com/tvline/news/grant-gustin-return-the-flash-james-gunn-1235174645/grant-gustin-the-flash-james-gunn.jpg" weigth=300 height=250>
-</div>
-    <h1>Formación</h1>
-   <fieldset>
-   <legend>datos personales</legend>
-   <ul>
-     <li>nombre: juan david</li>
-    <li>apellidos: salazar amador</li>
-    <li>puesto de trabajo deseado: analista y desarrollador de software</li>
-    <li>correo electronico: juandavidsalazaramador@gmail.com</li>
-    <li>nacionalidad: colombiano</li>
-    <li>Estado civil: soltero</li>
-   </ul> 
-</fieldset>
-   <fieldset>
-    <legend>Formación academica</legend>
-    <ul>
-    <li>basico: carlos martinez</li>    
-    <li>bachiller: guanenta</li>    
-    <li>tecnico: metalisteria</li>    
-    </ul>
-   </fieldset>
+    <!-- Header / Encabezado -->
+    <header class="header">
+        <div class="container">
+            <h1 class="titulo">📁 Mi Portafolio de Proyectos</h1>
+            <p class="subtitulo">HTML y CSS | Aprendizaje SENA</p>
+        </div>
+    </header>
 
+    <!-- Sección Hero - Presentación -->
+    <section class="hero">
+        <div class="container">
+            <h2>Bienvenido a mi portafolio</h2>
+            <p>Aquí encontraré todos los proyectos que desarrollo durante el curso de HTML y CSS.</p>
+            <p>Haz clic en cualquier proyecto para verlo en detalle.</p>
+        </div>
+    </section>
 
-<fieldset>
-    <legend>idiomas/conocimientos</legend>
-    <ul>
-        <li>Español: 100%</li>
-        <li>Ingles: 40%</li>
-        <table>
-           <thead><tr>
-            <h3>trabajos</h3>
-           </tr>
-        </thead>
-        <tbody>
-            <ol>
-            <li>mesero</li>    
-            <li>creador de paginas web</li>    
-            <li>albañil</li>    
-            <li>administrador de inventario</li>    
-             </ol>
-        </tbody> 
-        </table>
-    </ul>
-   </fieldset>
+    <!-- Galería de Proyectos -->
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title">🚀 Mis Proyectos</h2>
 
+            <div class="galeria">
+                <!-- Proyecto 1 -->
+                <a href="./proyectos/hoja de vida/index.html" class="proyecto-card">
+                    <div class="proyecto-imagen proyecto-1">
+                        <img src="./img/hoja.jpeg" alt="">
+                        <div class="overlay">
+                            <span class="ver-mas">Ver Proyecto →</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>hoja de vida</h3>
+                        <p>Mi primer proyecto en HTML y CSS con estructura básica.</p>
+                        <span class="etiqueta">Básico</span>
+                    </div>
+                </a>
 
+               
 
+                <!-- Proyecto 2 -->
+                <a href="./proyectos/tarjeta personal/index.html" class="proyecto-card">
+                    <div class="proyecto-imagen proyecto-2">
+                        <img src="./img/tarjeta.jpeg" alt="">
+                        <div class="overlay">
+                            <span class="ver-mas">Ver Proyecto →</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>tarjeta personal</h3>
+                        <p>Descripción breve del segundo proyecto.</p>
+                        <span class="etiqueta">Intermedio</span>
+                    </div>
+                </a>
+
+                <!-- Proyecto 3 -->
+                <a href="./proyectos/quien-soy/index.html" class="proyecto-card">
+                    <div class="proyecto-imagen proyecto-3">
+                        <img src="./img/quien-soy.png" alt="">
+                        <div class="overlay">
+                            <span class="ver-mas">Ver Proyecto →</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Quien soy?</h3>
+                        <p>Descripción breve del tercer proyecto.</p>
+                        <span class="etiqueta">Avanzado</span>
+                    </div>
+                </a>
+
+                
+                <!-- Proyecto 4 -->
+                <a href="./proyectos/factura/index.html" class="proyecto-card">
+                    <div class="proyecto-imagen proyecto-4">
+                        <img src="./img/" alt="">
+                        <div class="overlay">
+                            <span class="ver-mas">Ver Proyecto →</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Factura</h3>
+                        <p>Descripción breve del tercer proyecto.</p>
+                        <span class="etiqueta">Avanzado</span>
+                    </div>
+                </a>
+
+            
+
+                <!-- Agregar más proyectos copiando el bloque anterior -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 | Portafolio de Estudiante | SENA</p>
+        </div>
+    </footer>
 </body>
 </html>
