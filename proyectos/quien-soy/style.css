@@ -1,151 +1,143 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Segoe UI', Arial, sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-body{
-background:#f4f4f4;
-color:#444;
+header {
+    background: #3b3f45;
+    color: white; 
+    padding: 1%;
 }
 
-
-
-header{
-background:#e65908;
-color:white;
-padding: 30px 80px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-.logo{
-float:left;
+.letra {
+    font-size: 30px;
+    padding: 0% 20%;
 }
 
-nav{
-float:right;
+.inicio {
+    width: 50%;
+    vertical-align: middle;
+    text-align: left;
+    padding: 0% 25%;
 }
 
-header h1{
-font-size:20px;
-font-weight:500;
+.perfil {
+    background-color: #ff5722; 
+    color: white; 
+    text-align: center;
+    padding: 2% 10% 2% 10%;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:15px;
+.proyectos {
+    text-align: center;
+    padding: 0% 15%;
 }
 
-nav a:hover{
-color:#ebd65f;
+.card {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    border-color: #40453b07;
+    box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-.about{
-padding:80px 120px;
-background:white;
-overflow:hidden;
+.card img {
+    width: 100%;
 }
 
-.about img{
-float:left;
-width:220px;
-margin-right:60px;
-border-radius:8px;
+.perfill {
+    width: 25%;
+    height: 300px;
 }
 
-.about-text{
-max-width:450px;
+.perfilv {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 10% 10%;
 }
 
-.about-text h2{
-color:#ff5722;
-font-size:38px;
-margin-bottom:15px;
+.inicio h1 {
+    margin-bottom: 15px;
+    padding: 0% 20%;
 }
 
-.about-text p{
-line-height:1.6;
-margin-bottom:20px;
+.inicio p {
+    padding: 0% 5% 0% 20%;
 }
 
-.about-text button{
-background:#ff5722;
-color:white;
-border:none;
-padding:10px 12px;
-border-radius:4px;
-cursor:pointer;
+.inicio button {
+    width: 25%;
+    vertical-align: middle;
+    margin: 0% 20%;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-
-
-.orange-section{
-background:#ff5722;
-padding:80px;
-text-align:center;
+.imagenesp {
+    width: 400px;
+    height: 300px;
 }
 
-.orange-section img{
-width:180px;
-border-radius:50%;
+button {
+    background-color: #ff5722; 
+    color: white; /* Texto blanco para mejor contraste */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px; 
 }
 
-
-
-.services{
-padding:80px 120px;
-text-align:center;
-background:#f56607;
+button:hover {
+    background-color: #e64a19; /* Un naranja un poco más oscuro al pasar el mouse */
 }
 
-.services h2{
-font-size:40px;
-margin-bottom:40px;
-color:#fcfcfc;
+p, h3, h2 {
+    color: rgb(10, 10, 10);
 }
 
-.cards{
-overflow:hidden;
+/* Ajuste para que los textos dentro de la sección naranja sean legibles */
+.perfil p, .perfil h4 {
+    color: white;
 }
 
-.card{
-background:white;
-width:220px;
-float:left;
-margin:15px;
-border-radius:5px;
-overflow:hidden;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-text-align:center;
+.circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
 }
 
-.card img{
-width:100%;
-height:140px;
-object-fit:cover;
+.pie {
+    text-align: right;
+    background-color: #3b3f45;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    padding: 1% 19% 1% 0%;
 }
 
-.card h3{
-margin:10px 0;
+.nombre {
+    padding: 0% 0% 0% 45%;
+    color: white;
 }
 
-.card p{
-font-size:14px;
-padding:0 10px 20px;
-color:#6b6b6b;
+.vamos {
+    padding: 0% 0% 0% 20%;
 }
 
-/* FOOTER */
+.proy {
+    font-size: 50px;
+    padding: 0%;
+}
 
-footer{
-background:#3c3f45;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
+.pend {
+    padding: 0% 10%;
 }
