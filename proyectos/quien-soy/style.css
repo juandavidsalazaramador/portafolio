@@ -1,3 +1,7 @@
+/* ========================= */
+/* ESTILOS GENERALES (PC) */
+/* ========================= */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -22,7 +26,6 @@ nav a {
 
 .inicio {
     width: 50%;
-    vertical-align: middle;
     text-align: left;
     padding: 0% 25%;
 }
@@ -31,36 +34,32 @@ nav a {
     background-color: #ff5722; 
     color: white; 
     text-align: center;
-    padding: 2% 10% 2% 10%;
+    padding: 2% 10%;
 }
 
 .proyectos {
     text-align: center;
-    padding: 0% 15%;
+      padding: 20px 0; 
+    width: 100%;
 }
 
 .card {
     width: 200px;
     padding: 20px;
-    margin: 20px;
-    border-color: #40453b07;
-    box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* 👈 importante: quitamos el margen */
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    background: white;
 }
 
 .card img {
     width: 100%;
 }
 
-.perfill {
-    width: 25%;
-    height: 300px;
-}
-
 .perfilv {
     width: 350px;
     height: 350px;
-    margin: 0 auto;
-    padding: 10% 10%;
+    padding: 10%;
 }
 
 .inicio h1 {
@@ -74,10 +73,7 @@ nav a {
 
 .inicio button {
     width: 25%;
-    vertical-align: middle;
     margin: 0% 20%;
-    text-align: center;
-    margin-bottom: 15px;
 }
 
 .imagenesp {
@@ -87,23 +83,17 @@ nav a {
 
 button {
     background-color: #ff5722; 
-    color: white; /* Texto blanco para mejor contraste */
+    color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 10px;
     cursor: pointer;
     border-radius: 5px; 
 }
 
 button:hover {
-    background-color: #e64a19; /* Un naranja un poco más oscuro al pasar el mouse */
+    background-color: #e64a19;
 }
 
-p, h3, h2 {
-    color: rgb(10, 10, 10);
-}
-
-/* Ajuste para que los textos dentro de la sección naranja sean legibles */
 .perfil p, .perfil h4 {
     color: white;
 }
@@ -116,28 +106,131 @@ p, h3, h2 {
     border: 3px solid white;
 }
 
-.pie {
-    text-align: right;
-    background-color: #3b3f45;
-    color: rgb(255, 255, 255);
-    margin: 0%;
-    padding: 1% 19% 1% 0%;
-}
-
 .nombre {
-    padding: 0% 0% 0% 45%;
+    padding-left: 45%;
     color: white;
 }
 
 .vamos {
-    padding: 0% 0% 0% 20%;
+    padding-left: 20%;
 }
 
 .proy {
     font-size: 50px;
-    padding: 0%;
 }
 
-.pend {
-    padding: 0% 10%;
+
+  .pend {
+    display: flex;
+    justify-content: center; /* centra el grupo */
+    flex-wrap: wrap;         /* permite bajar en pantallas pequeñas */
+    gap: 10px;               /* 👈 espacio REAL de 10px entre cards */
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE (CELULAR) */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    .nombre {
+        padding: 0;
+        text-align: center;
+    }
+
+    .vamos {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .inicio {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .perfilv {
+        width: 200px;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .inicio h1 {
+        padding: 0;
+    }
+
+    .inicio p {
+        padding: 10px;
+    }
+
+    .inicio button {
+        width: auto;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .letra {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .circulo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .proyectos {
+        padding: 10px;
+    }
+
+    .pend {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .pend td{
+        text-align: center;
+    }
+
+    .pend tr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .imagenesp {
+        width: 100%;
+        height: auto;
+    }
+
+    .proy {
+        font-size: 28px;
+    }
+}
+
+.glass {
+    background: #3b3f45;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
 }
