@@ -257,59 +257,81 @@ button:hover {
 
 
 
-@media (max-width: 480px) {
-   
-    .inicio, .inicio h1, .inicio p, .letra, .perfil, .vamos, .nombre {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+
+@media (max-width: 559px) {
+    
+    /* 1. Ajuste Global de Contenedores */
+    .inicio, .perfil, .proyectos, .letra, .nombre, .vamos {
         width: 100% !important;
-        box-sizing: border-box;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box; /* Fundamental para que el padding no sume ancho */
+        text-align: center;
     }
 
-    
+    /* 2. Textos y Títulos */
     .proy {
-        font-size: 24px !important;
-    }
-    .letra {
-        font-size: 18px !important;
-    }
-
-  
-    .circulo {
-        width: 120px;
-        height: 120px;
+        font-size: 28px !important; /* Evita que el título se desborde */
     }
     
+    .letra {
+        font-size: 20px !important;
+        padding: 10px !important;
+    }
+
+    .inicio h1, .inicio p {
+        padding: 0 !important;
+        margin: 10px 0;
+    }
+
+    /* 3. Elementos Visuales (Imágenes y Círculo) */
+    .circulo {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 15px;
+    }
+
     .perfilv, .imagenesp {
         width: 100% !important;
+        max-width: 280px; /* Límite para pantallas de 300px */
         height: auto !important;
         padding: 0 !important;
-    }
-
-    
-    .card {
-        width: 90% !important;
-        margin: 10px auto !important;
+        margin: 0 auto;
     }
 
     
     .pend {
-        width: 100% !important;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .card {
+        width: 90% !important; /* Ocupa casi todo el ancho disponible */
+        max-width: 260px;      /*no se estira de más en 559px */
+        margin: 15px auto !important;
+        float: none !important;
+        display: inline-block;
     }
 
     
     .inicio button {
-        width: 90% !important;
-        margin: 10px auto !important;
+        width: 80% !important;
+        margin: 20px auto !important;
+        display: block;
     }
 
-  
     nav a {
-        display: inline-block;
-        margin: 5px;
+        margin: 5px 8px;
         font-size: 14px;
+        display: inline-block;
+    }
+
+    header {
+        padding: 15px 5px;
     }
 }
