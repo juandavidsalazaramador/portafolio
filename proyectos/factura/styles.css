@@ -1,10 +1,157 @@
 *{
-    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+
 body{
-    front-family: Arial, sans-serif;
-    background: #eee;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    background:#e5e5e5;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:40px;
+    zoom:100%;
+    font-family: 'Montserrat', 'Poppins', 'Open Sans', Arial, sans-serif;
+}
+
+
+.factura{
+    width:850px;
+    min-height:1100px;
+    background:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    padding-bottom:30px;
+    margin:auto;
+}
+
+
+.header{
+    background:#1b1f2a;
+    color:white;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:5px solid #ff3152;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+.logo p{
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.titulo h1{
+    color:#ff3152;
+    font-size:55px;
+    letter-spacing:2px;
+}
+
+
+.info{
+    background:#1b1f2a;
+    color:white;
+    padding:30px 35px;
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+    line-height:1.7;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#efefef;
+    padding:18px;
+    text-align:left;
+    font-size:16px;
+}
+
+table td{
+    padding:18px;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+}
+
+/* FOOTER */
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+}
+
+.payment{
+    width:60%;
+    font-size:15px;
+    line-height:1.7;
+}
+
+.payment h4{
+    margin-bottom:10px;
+    margin-top:18px;
+    font-size:18px;
+}
+
+.total{
+    width: 30%;
+    text-align:right;
+    font-size:16px;
+}
+
+.total h2{
+    margin-top:18px;
+    padding-top:15px;
+    border-top:2px solid #1b1f2a;
+    color:#1b1f2a;
+    font-size:24px;
+}
+
+.firma {
+    
+    margin-right: 100px; 
+    margin-left: auto;
+    margin-top: 18px;
+
+    /*largo de la línea(importante) */
+    width: 250px; 
+    
+    
+    text-align: center; 
+    
+    
+    border-top: 3px solid #555555; 
+    padding-top: 10px;
+    font-size: 20px;
+    color: #555555; 
+}
+
+.firma21 {
+    /*largo de la línea(importante) */
+    width: 250px; 
+    
+    /* Alineación */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center; 
+
+    
+    border-top: 2px solid #555555; 
+    padding-top: 10px;
+    color: #555555;
+}
+
+
+.firma21 h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
 }
