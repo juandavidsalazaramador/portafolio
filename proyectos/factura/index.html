@@ -1,108 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factura</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factura</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!--nombre de la marcaa-->
-    <div class="invoce">
-     <div>
-    </div class="header">
-    <div class="brand">
-     <h2>Nombre de la marca</h2>    
-     <p>espacio para el eslogan aquí</p>
-    </div>
-<!--factura/invoce-->
-    <div class="title">
-       <h1>Factura</h1> 
-    </div>
-    </div>
-    <!--información-->
-    <div class="info">
-    <div>
-      <h4>facturar a nombre de</h4>
-      <p>Dwyane clark</p> 
-      <p></p>
+
+<div class="factura">
+
+    <!-- ENCABEZADO -->
+    <div class="header">
+        <div class="logo">
+            <h2>Brand Name</h2>
+            <p>TAGLINE SPACE HERE</p>
+        </div>
+
+        <div class="titulo">
+            <h1>INVOICE</h1>
+        </div>
     </div>
 
-    <div>
-        <p>Factura #: 52148</p>
-        <p>fecha:01/02/2020</p>
-      </div>
-       <!--tabla-->
-
-       <table>
-  <thead>
-    <tr>
-        <th>SL.</th>
-      <th>Descripción del artículo</th>
-      <th>Precio</th>
-      <th>Cantidad</th>
-      <th>Total</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-       <td>1</td> 
-      <td>Lorem ipsum dolor</td>
-      <td>$50.00</td>
-      <td>1</td>
-      <td>$50.00</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Peinlentesque id neque liguia</td>
-      <td>$20.00</td>
-      <td>3</td>
-      <td>$60.00</td>
-    </tr>
-     <tr>
-      <td>3</td>
-      <td>Robot</td>
-      <td>$10.00</td>
-      <td>2</td>
-      <td>$20.00</td>
-    </tr>
-     <tr>
-      <td>4</td>
-      <td>celular</td>
-      <td>$90.00</td>
-      <td>1</td>
-      <td>$90.00</td>
-    </tr>
     
-  </tbody>
-</table>
+    <div class="info">
+        <div class="left">
+            <h3>Invoice to:</h3>
+            <p>Dwyane Clark</p>
+            <p>24 Dummy Street Area</p>
+            <p>Location, Lorem ipsum.</p>
+            <p>57025836</p>
+        </div>
 
-    <div class="left">
-    <p>gracias por su compra</p>
-    <h4>información del pago</h4>
-    <p>numero de cuenta:  1254 5676 5843</p>
-    <p>nombre de la cuenta:  Lorem ipsum dolor</p>
-    <p>Detalles del banco:  agregar datos</p>
-  
-  <hr>
-  <h4>Terminos y condiciones</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Fusce dignissim, sapien non fermentum tristique, 
-      lacus justo posuere massa, vitae ultrices elit nulla vel velit.
-    </p>
-  </div>
-  <div class="right">
-    <!-- TOTAL -->
-    <div class="total">
-      <p>Sub Total: $220</p>
-      <p>Tax: 0%</p>
-      <h2>Total: $220</h2>
+        <div class="right">
+            <p><strong>Invoice #</strong> 52148</p>
+            <p><strong>Date:</strong> 01 / 02 / 2020</p>
+        </div>
     </div>
-  </div> 
-  <!-- firma -->
-   <div class="asignatura">
-    <div></div>
-<p>firma autorizada</p>
+
+   
+    <table>
+        <tr>
+            <th>SL.</th>
+            <th>Item Description</th>
+            <th>Price</th>
+            <th>Qty.</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Lorem Ipsum Dolor</td>
+            <td>$50.00</td>
+            <td>1</td>
+            <td>$50.00</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Pellentesque id neque ligula</td>
+            <td>$20.00</td>
+            <td>3</td>
+            <td>$60.00</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Interdum et malesuada fames</td>
+            <td>$10.00</td>
+            <td>2</td>
+            <td>$20.00</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Vivamus volutpat faucibus</td>
+            <td>$90.00</td>
+            <td>1</td>
+            <td>$90.00</td>
+        </tr>
+    </table>
+
+    <!-- PIE -->
+    <div class="bottom">
+
+        <div class="payment">
+            <h4>Thank you for your business</h4>
+            <p><strong>Payment Info:</strong></p>
+            <p>Account #: 1234 5678 9012</p>
+            <p>A/C Name: Lorem Ipsum</p>
+            <p>Bank Details: Add your details</p>
+
+            
+            
+          <div class="firma21">
+        <h4>Terms & Conditions</h4>
+    </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+
+        <div class="total">
+    <p>Sub Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$220.00</p>
+    <p>Tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00%</p>
+    <h2>Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$220.00</h2>
 </div>
+
+    </div>
+
+    <div class="firma">
+        <p>Authorised Sign</p>
+    </div>
+
+</div>
+
+
+
 </body>
 </html>
