@@ -1,7 +1,3 @@
-/* ========================= */
-/* ESTILOS GENERALES (PC) */
-/* ========================= */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -46,7 +42,7 @@ nav a {
 .card {
     width: 200px;
     padding: 20px;
-    margin: 20px; /* 👈 importante: quitamos el margen */
+    margin: 20px; 
     box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
     text-align: center;
     background: white;
@@ -122,99 +118,119 @@ button:hover {
 
   .pend {
     display: flex;
-    justify-content: center; /* centra el grupo */
+    justify-content: center; 
     flex-wrap: wrap;         /* permite bajar en pantallas pequeñas */
-    gap: 10px;               /* 👈 espacio REAL de 10px entre cards */
+    gap: 10px;               /*espacio 10px entre cards*/
     padding: 0;
     margin: 0 auto;
 }
 
-/* ========================= */
-/* 📱 RESPONSIVE (CELULAR) */
-/* ========================= */
 
-@media (max-width: 768px) {
-
-    table, tr, td {
-        display: block;
+@media (max-width: 1000px) {
+    .inicio {
         width: 100%;
+        padding: 5% 0;
+        text-align: center;
+    }
+
+    .inicio h1, .inicio p, .inicio button, .letra {
+        padding: 0 5%;
+        margin: 15px auto;
+        width: auto;
+    }
+
+    .letra {
+        font-size: 24px;
+    }
+
+    .perfilv {
+        width: 80%;
+        height: auto;
+        padding: 20px auto;
     }
 
     .nombre {
-        padding: 0;
+        padding-left: 0;
         text-align: center;
     }
 
     .vamos {
-        padding: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .imagenesp {
+        width: 90%; /*ancho de la pantalla de la imagen*/
+        height: auto;
+    }
+
+    .pend {
+        flex-direction: column; /*Apila las tarjetas verticalmente*/
+        align-items: center;
+    }
+
+    .card {
+        width: 70%; /*Tarjetas más anchas para que se lean mejor en móvil*/
+    }
+}
+
+
+
+@media (max-width: 759px) {
+    
+    header {
         text-align: center;
     }
 
     nav a {
+        margin: 0 10px;
         display: inline-block;
-        margin: 8px;
+    }
+
+    
+    .inicio, .letra, .inicio h1, .inicio p, .nombre, .vamos {
+        width: 100%;
+        padding: 0 5% !important; 
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box; /* el padding no rompa el ancho */
     }
 
     .inicio {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
-    .perfilv {
-        width: 200px;
-        height: auto;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .inicio h1 {
-        padding: 0;
-    }
-
-    .inicio p {
-        padding: 10px;
-    }
-
+    
     .inicio button {
-        width: auto;
-        margin: 10px auto;
+        width: 80%; /*Más ancho*/
+        margin: 20px auto !important;
         display: block;
     }
 
-    .letra {
-        font-size: 18px;
-        padding: 10px;
+    /* Sección de perfil y foto */
+    .perfilv {
+        width: 80%;
+        height: auto;
+        padding: 20px auto;
     }
 
     .circulo {
-        width: 120px;
-        height: 120px;
-    }
-
-    .proyectos {
-        padding: 10px;
-    }
-
-    .pend {
-        padding: 0;
+        width: 160px;
+        height: 160px;
         margin: 0 auto;
-        text-align: center;
     }
 
-    .pend td{
-        text-align: center;
+    /* Proyectos en lista vertical */
+    .pend {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .pend tr {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-}
 
     .card {
-        width: 90%;
-        margin: 20px auto;
+        width: 85%;
+        margin: 15px 0;
     }
 
     .imagenesp {
@@ -223,14 +239,6 @@ button:hover {
     }
 
     .proy {
-        font-size: 28px;
+        font-size: 32px;
     }
-}
-
-.glass {
-    background: #3b3f45;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
 }
