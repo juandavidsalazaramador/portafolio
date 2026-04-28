@@ -254,3 +254,62 @@ button:hover {
     }
 }
 
+
+
+
+@media (max-width: 480px) {
+   
+    .inicio, .inicio h1, .inicio p, .letra, .perfil, .vamos, .nombre {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    
+    .proy {
+        font-size: 24px !important;
+    }
+    .letra {
+        font-size: 18px !important;
+    }
+
+  
+    .circulo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .perfilv, .imagenesp {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    
+    .card {
+        width: 90% !important;
+        margin: 10px auto !important;
+    }
+
+    
+    .pend {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .inicio button {
+        width: 90% !important;
+        margin: 10px auto !important;
+    }
+
+  
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
