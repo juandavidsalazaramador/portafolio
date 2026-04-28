@@ -117,13 +117,23 @@ button:hover {
 
 
   .pend {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;         /* permite bajar en pantallas pequeñas */
-    gap: 10px;               /*espacio 10px entre cards*/
-    padding: 0;
+    /* Limpia el contenedor*/
+    overflow: hidden; 
+    /* Centra el bloque entero */
     margin: 0 auto;
+    /* Ajusta el ancho al contenido para que el margin auto funcione */
+    width: fit-content;
+    padding: 0;
 }
+
+.pend > * {
+    /* Alinea...*/
+    float: left;
+    margin: 5px;
+    /* Evita que rompan el tamaño */
+    box-sizing: border-box;
+}
+
 
 
 @media (max-width: 1000px) {
@@ -184,6 +194,7 @@ button:hover {
 
     nav a {
         margin: 0 10px;
+        /* posiciona elementos horizontalmente uno al lado del otro*/
         display: inline-block;
     }
 
@@ -194,7 +205,7 @@ button:hover {
         text-align: center;
         margin-left: 0;
         margin-right: 0;
-        box-sizing: border-box; /* el padding no rompa el ancho */
+        box-sizing: border-box; /* ayuda a no sumar tmaño extra al elemento (padd,bord)*/
     }
 
     .inicio {
@@ -242,3 +253,4 @@ button:hover {
         font-size: 32px;
     }
 }
+
