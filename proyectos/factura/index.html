@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Factura</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
@@ -13,8 +13,16 @@
     <!-- ENCABEZADO -->
     <div class="header">
         <div class="logo">
-            <h2>Brand Name</h2>
-            <p>TAGLINE SPACE HERE</p>
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <polygon points="12,2 22,9 12,22 2,9"/>
+                </svg>
+            </div>
+
+            <div class="logo-text">
+                <h2>Brand Name</h2>
+                <p>Tagline Space Here</p>
+            </div>
         </div>
 
         <div class="titulo">
@@ -22,100 +30,131 @@
         </div>
     </div>
 
-    
+    <!-- INFO -->
     <div class="info">
         <div class="left">
             <h3>Invoice to:</h3>
             <p>Dwyane Clark</p>
-            <p>24 Dummy Street Area</p>
+            <p>24 Dummy Street Area,</p>
             <p>Location, Lorem ipsum.</p>
             <p>57025836</p>
         </div>
 
         <div class="right">
-            <p><strong>Invoice #</strong> 52148</p>
+            <p><strong>Invoice#</strong> 52148</p>
             <p><strong>Date:</strong> 01 / 02 / 2020</p>
         </div>
     </div>
 
-   
-    <table>
-        <tr>
-            <th>SL.</th>
-            <th>Item Description</th>
-            <th>Price</th>
-            <th>Qty.</th>
-            <th>Total</th>
-        </tr>
+    <!-- TABLA HEADER -->
+    <table class="tabla-header">
+        <thead>
+            <tr>
+                <th>SL.</th>
+                <th>Item Description</th>
+                <th>Price</th>
+                <th>Qty.</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+    </table>
 
-        <tr>
-            <td>1</td>
-            <td>Lorem Ipsum Dolor</td>
-            <td>$50.00</td>
-            <td>1</td>
-            <td>$50.00</td>
-        </tr>
+    <!-- TABLA BODY -->
+    <table class="tabla-body">
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lorem Ipsum Dolor</td>
+                <td>$50.00</td>
+                <td>1</td>
+                <td>$50.00</td>
+            </tr>
 
-        <tr>
-            <td>2</td>
-            <td>Pellentesque id neque ligula</td>
-            <td>$20.00</td>
-            <td>3</td>
-            <td>$60.00</td>
-        </tr>
+            <tr>
+                <td>2</td>
+                <td>Pellentesque id neque ligula</td>
+                <td>$20.00</td>
+                <td>3</td>
+                <td>$60.00</td>
+            </tr>
 
-        <tr>
-            <td>3</td>
-            <td>Interdum et malesuada fames</td>
-            <td>$10.00</td>
-            <td>2</td>
-            <td>$20.00</td>
-        </tr>
+            <tr>
+                <td>3</td>
+                <td>Interdum et malesuada fames</td>
+                <td>$10.00</td>
+                <td>2</td>
+                <td>$20.00</td>
+            </tr>
 
-        <tr>
-            <td>4</td>
-            <td>Vivamus volutpat faucibus</td>
-            <td>$90.00</td>
-            <td>1</td>
-            <td>$90.00</td>
-        </tr>
+            <tr>
+                <td>4</td>
+                <td>Vivamus volutpat faucibus</td>
+                <td>$90.00</td>
+                <td>1</td>
+                <td>$90.00</td>
+            </tr>
+
+          <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+        </tbody>
     </table>
 
     <!-- PIE -->
     <div class="bottom">
-
         <div class="payment">
-            <h4>Thank you for your business</h4>
-            <p><strong>Payment Info:</strong></p>
-            <p>Account #: 1234 5678 9012</p>
-            <p>A/C Name: Lorem Ipsum</p>
-            <p>Bank Details: Add your details</p>
+            <p class="thank-you">Thank you for your business</p>
+            <p class="payment-label">Payment Info:</p>
 
-            
-            
-          <div class="firma21">
-        <h4>Terms & Conditions</h4>
-    </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="payment-details">
+                <p>Account #: 1234 5678 9012</p>
+                <p>A/C Name: Lorem Ipsum</p>
+                <p>Bank Details: Add your details</p>
+            </div>
         </div>
 
+        <div class="total-section">
+            <div class="total-row">
+                <span>Sub Total:</span>
+                <span>$220.00</span>
+            </div>
 
-        <div class="total">
-    <p>Sub Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$220.00</p>
-    <p>Tax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.00%</p>
-    <h2>Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$220.00</h2>
-</div>
+            <div class="total-row">
+                <span>Tax:</span>
+                <span>0.00%</span>
+            </div>
 
+            <div class="total-row grand">
+                <span>Total:</span>
+                <span>$220.00</span>
+            </div>
+        </div>
     </div>
 
-    <div class="firma">
-        <p>Authorised Sign</p>
+    <!-- TERMS -->
+    <div class="terms">
+        <div class="terms-title">Terms & Conditions</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur
+             adipiscing elit.
+            Fusce elementum pretium consequat.
+        </p>
     </div>
 
+    <!-- FIRMA -->
+    <div class="firma-wrap">
+        <div class="firma">Authorised Sign</div>
+    </div>
+
+    <!-- BARRA FINAL -->
+    <div class="footer-bar"></div>
+
 </div>
-
-
 
 </body>
 </html>
