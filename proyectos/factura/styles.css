@@ -4,7 +4,6 @@
     box-sizing:border-box;
 }
 
-
 body{
     background:#e5e5e5;
     display:flex;
@@ -12,146 +11,186 @@ body{
     align-items:flex-start;
     min-height:100vh;
     padding:40px;
-    zoom:100%;
-    font-family: 'Montserrat', 'Poppins', 'Open Sans', Arial, sans-serif;
+    font-family:'Montserrat','Poppins','Open Sans',Arial,sans-serif;
 }
-
 
 .factura{
-    width:850px;
-    min-height:1100px;
+    width:800px;
     background:white;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
-    padding-bottom:30px;
     margin:auto;
+    overflow:hidden;
 }
 
-
+/* HEADER */
 .header{
     background:#1b1f2a;
     color:white;
-    padding:35px;
+    padding:28px 35px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom:5px solid #ff3152;
+    border-bottom:4px solid #ff3152;
 }
 
-.logo h2{
-    font-size:30px;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
-.logo p{
-    font-size:13px;
+.logo-icon{
+    width:42px;
+    height:42px;
+    border:2px solid white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-icon svg{
+    width:22px;
+    height:22px;
+    fill:white;
+}
+
+.logo-text h2{
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo-text p{
+    font-size:10px;
     letter-spacing:2px;
 }
 
 .titulo h1{
     color:#ff3152;
-    font-size:55px;
-    letter-spacing:2px;
+    font-size:48px;
 }
 
-
+/* INFO */
 .info{
     background:#1b1f2a;
     color:white;
-    padding:30px 35px;
+    padding:20px 35px 28px;
     display:flex;
     justify-content:space-between;
-    font-size:15px;
-    line-height:1.7;
+    font-size:13px;
 }
 
+.info .left p{
+    color:rgba(255,255,255,0.8);
+}
 
-table{
+/* TABLA HEADER */
+.tabla-header{
     width:100%;
+    border-collapse:collapse;
+    
+}
+
+.tabla-header thead{
+background: #efefef;
+}
+
+.tabla-header th{
+    padding:14px 20px;
+    text-align:left;
+  
+}
+
+/* TABLA BODY */
+.tabla-body{
+    width:calc(100% - 70px);
+    margin:0 35px;
     border-collapse:collapse;
 }
 
-table th{
-    background:#efefef;
-    padding:18px;
-    text-align:left;
-    font-size:16px;
+.tabla-body td{
+    padding:20px;
+    border-bottom:1px solid #ececec;
+    height:70px;
 }
 
-table td{
-    padding:18px;
-    border-bottom:1px solid #ddd;
-    font-size:15px;
-}
-
-/* FOOTER */
+/* PIE */
 .bottom{
     display:flex;
     justify-content:space-between;
-    padding:40px;
+    padding:28px 35px;
 }
 
 .payment{
-    width:60%;
-    font-size:15px;
-    line-height:1.7;
+    width:55%;
+    font-size:13px;
 }
 
-.payment h4{
+.thank-you{
+    font-weight:bold;
     margin-bottom:10px;
-    margin-top:18px;
-    font-size:18px;
 }
 
-.total{
-    width: 30%;
-    text-align:right;
-    font-size:16px;
+.payment-label{
+    font-weight:bold;
 }
 
-.total h2{
-    margin-top:18px;
-    padding-top:15px;
+.total-section{
+    width:38%;
+}
+
+.total-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:6px;
+}
+
+.total-row.grand{
     border-top:2px solid #1b1f2a;
-    color:#1b1f2a;
-    font-size:24px;
+    margin-top:10px;
+    padding-top:10px;
+    font-weight:bold;
 }
 
-.firma {
-    
-    margin-right: 100px; 
-    margin-left: auto;
-    margin-top: 18px;
-
-    /*largo de la línea(importante) */
-    width: 250px; 
-    
-    
-    text-align: center; 
-    
-    
-    border-top: 3px solid #555555; 
-    padding-top: 10px;
-    font-size: 20px;
-    color: #555555; 
+/* TERMS */
+.terms{
+    padding:22px 35px;
+    font-size:12px;
 }
 
-.firma21 {
-    /*largo de la línea(importante) */
-    width: 250px; 
-    
-    /* Alineación */
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center; 
+.terms-title{
+    border-top:2px solid #ccc;
+    padding-top:10px;
+    width:160px;
+    margin-bottom:10px;
+}
 
-    
-    border-top: 2px solid #555555; 
-    padding-top: 10px;
-    color: #555555;
+/* FIRMA */
+.firma-wrap{
+    display:flex;
+    justify-content:flex-end;
+    padding:24px 35px;
+}
+
+.firma{
+    width:200px;
+    text-align:center;
+    border-top:2px solid #555;
+    padding-top:8px;
+}
+
+/* BARRA FINAL */
+.footer-bar{
+    background:#1b1f2a;
+    height:18px;
 }
 
 
-.firma21 h4 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: normal;
+.terms-title {
+    display: block;
+    width: 160px;
+}
+
+.terms p {
+    max-width: 160px;
 }
