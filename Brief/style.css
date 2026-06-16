@@ -1,0 +1,916 @@
+/* VARIABLES CSS — PALETA Y TIPOGRAFÍAS*/
+:root {
+    --color-azul-oscuro:  #0a1931;
+    --color-azul-medio:   #15305b;
+    --color-azul-claro:   #0077b6;
+    --color-cian:         #00b4d8;
+    --color-blanco:       #ffffff;
+    --color-gris-fondo:   #f8f9fa;
+    --color-gris-texto:   #4a5568;
+    --color-lineas:       #e2e8f0;
+
+    --fuente-titulos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fuente-cuerpo:  Arial, Helvetica, sans-serif;
+}
+
+/*RESET Y BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 9vh;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-gris-texto);
+    background-color: var(--color-blanco);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-azul-oscuro);
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    padding: 6vh 5vw;
+}
+
+/*TÍTULOS COMUNES */
+.titulo-seccion-centrado {
+    text-align: center;
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
+    margin-bottom: 4vh;
+}
+
+.titulo-seccion-izquierda {
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
+    margin-bottom: 4vh;
+}
+
+/*1. ENCABEZADO */
+.casilla-menu {
+    display: none;
+}
+
+.boton-hamburguesa {
+    display: none;
+    font-size: 2vw;
+    color: var(--color-azul-medio);
+    cursor: pointer;
+    user-select: none;
+}
+
+.encabezado-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5vw;
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-lineas);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    flex-shrink: 0;
+}
+
+.imagen-logo-encabezado {
+    width: auto;
+    max-width: 4rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.texto-logo {
+    font-size: 1vw;
+    font-weight: bold;
+    color: var(--color-azul-oscuro);
+    line-height: 1.3;
+}
+
+.navegacion-principal {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.enlace-menu {
+    color: var(--color-azul-medio);
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.enlace-menu:hover {
+    color: var(--color-cian);
+}
+
+.boton-donar-encabezado {
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+    padding: 0.8vh 1.2vw;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1vw;
+    flex-shrink: 0;
+}
+
+.boton-donar-encabezado:hover {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+}
+
+/* 2. BANNER PRINCIPAL / HERO  —  CSS Grid */
+.banner-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 50vh;
+    background-color: var(--color-gris-fondo);
+}
+
+.contenedor-imagen-banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor-imagen-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contenedor-texto-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8vh 8vw;
+}
+
+.etiqueta-superior {
+    color: var(--color-cian);
+    font-weight: bold;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    margin-bottom: 1.5vh;
+}
+
+.titulo-banner {
+    font-size: 3.5vw;
+    line-height: 1.2;
+    margin-bottom: 2vh;
+}
+
+.parrafo-banner {
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+}
+
+.bloque-botones-banner {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.boton-lleno {
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+    padding: 1.2vh 2vw;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 1vw, 1.1rem);
+}
+
+.boton-lleno:hover {
+    background-color: var(--color-azul-medio);
+    color: var(--color-blanco);
+}
+
+.boton-linea {
+    border: 2px solid var(--color-azul-claro);
+    color: var(--color-azul-claro);
+    padding: 1.2vh 2vw;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 1vw, 1.1rem);
+}
+
+.boton-linea:hover {
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+}
+
+/*3. IMPACTO EN CIFRAS  —  CSS Grid */
+.seccion-impacto {
+    background-color: var(--color-blanco);
+}
+
+.cuadricula-impacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+.tarjeta-impacto {
+    text-align: center;
+    padding: 2vh 1vw;
+    border-left: 3px solid var(--color-lineas);
+}
+
+/* Pseudo-elemento ::before obligatorio */
+.tarjeta-impacto::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;;
+    margin: 0 auto 1.5vh auto;
+    border-radius: 2px;
+}
+
+.icono-impacto {
+    font-size: 2vw;
+    margin-bottom: 1vh;
+}
+
+.numero-impacto {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    color: var(--color-azul-claro);
+    margin-bottom: 1vh;
+}
+
+.texto-impacto {
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+}
+
+/* 4. NUESTROS PROGRAMAS  —  CSS Grid */
+.seccion-programas {
+    background-color: var(--color-gris-fondo);
+}
+
+.cuadricula-programas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2vw;
+}
+
+.tarjeta-programa {
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 4vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-programa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.caja-imagen-programa {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 3vh;
+}
+
+.imagen-programa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nombre-programa {
+    margin-bottom: 1vh;
+    padding: 0 1.5vw;
+}
+
+.descripcion-programa {
+    padding: 0 1.5vw;
+}
+
+/* 5. TECNOLOGÍAS  —  CSS Grid*/
+.seccion-tecnologias {
+    background-color: var(--color-blanco);
+}
+
+.cuadricula-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.logo-tecnologia {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 15px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-lineas);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.logo-tecnologia:hover {
+    transform: scale(1.08);
+}
+
+
+/* 6. VIDEOS  —  CSS Grid */
+.seccion-labor {
+    background-color: var(--color-blanco);
+}
+
+.cuadricula-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.reproductor-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: var(--color-azul-oscuro);
+    border-radius: 14px;
+    display: block;
+}
+
+/* 7. HISTORIAS DE ÉXITO  —  CSS Grid */
+.seccion-historias {
+    background-color: var(--color-gris-fondo);
+}
+
+.cuadricula-historias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.tarjeta-historia {
+    text-align: center;
+    padding: 2vh 1.5vw;
+    border: 1px solid var(--color-lineas);
+    border-radius: 8px;
+    background-color: var(--color-blanco);
+}
+
+.foto-egresado {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    margin: 0 auto 1.5vh auto;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonio-texto {
+    font-style: italic;
+    margin-bottom: 1.5vh;
+    font-size: clamp(0.85rem, 1vw, 1rem);
+}
+
+.nombre-egresado {
+    color: var(--color-azul-claro);
+}
+
+.cargo-egresado {
+    font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+}
+
+/* 8. CÓMO DONAR  —  CSS Grid */
+.seccion-como-donar {
+    background-color: var(--color-blanco);
+}
+
+.cuadricula-donar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.tarjeta-donar {
+    background-color: var(--color-gris-fondo);
+    padding: 3vh 2vw;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.circulo-icono {
+    width: 4vw;
+    height: 4vw;
+    background-color: var(--color-blanco);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+    margin: 0 auto 2vh auto;
+}
+
+.opcion-donar {
+    margin-bottom: 1vh;
+}
+
+.texto-donar {
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+}
+
+/* 9. FORMULARIO  —  Flexbox + pseudo-clase :focus */
+.seccion-formulario {
+    background-color: var(--color-gris-fondo);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 45vw;
+    margin: 0 auto;
+    gap: 2vh;
+    background-color: var(--color-blanco);
+    padding: 3vh 3vw;
+    border: 1px solid var(--color-lineas);
+    border-radius: 8px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+
+.etiqueta-formulario {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+}
+
+.entrada-formulario {
+    padding: 1.2vh 1vw;
+    border: 1px solid var(--color-lineas);
+    border-radius: 4px;
+    font-size: clamp(0.85rem, 1vw, 1rem);
+    transition: border-color 0.3s ease;
+}
+
+.entrada-formulario:focus {
+    outline: none;
+    border-color: var(--color-azul-claro);
+    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
+}
+
+.boton-enviar-formulario {
+    background-color: var(--color-cian);
+    color: var(--color-blanco);
+    border: none;
+    padding: 1.5vh 1vw;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar-formulario:hover {
+    background-color: var(--color-azul-claro);
+}
+
+/* 10. ALIADOS  —  Flexbox */
+.seccion-aliados {
+    background-color: var(--color-blanco);
+}
+
+.fila-aliados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin-top: 2vh;
+}
+
+.logo-aliado {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(40%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-aliado:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* 11. TRANSPARENCIA  —  Flexbox */
+.seccion-transparencia {
+    background-color: var(--color-azul-medio);
+}
+
+.bloque-transparencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 50vw;
+    margin: 0 auto;
+    gap: 2vh;
+}
+
+.titulo-blanco {
+    color: var(--color-blanco);
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
+}
+
+.parrafo-blanco {
+    color: var(--color-blanco);
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
+
+.boton-transparencia {
+    background-color: var(--color-blanco);
+    color: var(--color-azul-oscuro);
+    padding: 1.2vh 2vw;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 1vw, 1rem);
+}
+
+.boton-transparencia:hover {
+    background-color: var(--color-cian);
+    color: var(--color-blanco);
+}
+
+/* 12. BOLETÍN  —  Flexbox */
+.seccion-boletin {
+    background-color: var(--color-gris-fondo);
+}
+
+.subtitulo-boletin {
+    text-align: center;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    margin-bottom: 2vh;
+}
+
+.formulario-boletin {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.entrada-boletin {
+    padding: 1.2vh 1vw;
+    border: 1px solid var(--color-lineas);
+    border-radius: 4px;
+    flex-grow: 1;
+    min-width: 0;
+    font-size: clamp(0.85rem, 1vw, 1rem);
+    transition: border-color 0.3s ease;
+}
+
+.entrada-boletin:focus {
+    outline: none;
+    border-color: var(--color-azul-claro);
+}
+
+.boton-boletin {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 1.2vh 2vw;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: clamp(0.85rem, 1vw, 1rem);
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+}
+
+.boton-boletin:hover {
+    background-color: var(--color-azul-claro);
+}
+
+/* 13. PIE DE PÁGINA  —  CSS Grid */
+.pie-pagina {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    padding: 4vh 5vw 1vh 5vw;
+}
+
+.cuadricula-pie {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2vw;
+    margin-bottom: 3vh;
+}
+
+.titulo-columna-pie {
+    color: var(--color-blanco);
+    margin-bottom: 1.5vh;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
+
+.texto-columna-pie {
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+    color: var(--color-lineas);
+    margin-bottom: 0.8vh;
+}
+
+.enlace-pie {
+    display: block;
+    color: var(--color-lineas);
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+    margin-bottom: 1vh;
+}
+
+.enlace-pie:hover {
+    color: var(--color-cian);
+}
+
+.barra-derechos {
+    text-align: center;
+    border-top: 1px solid var(--color-azul-medio);
+    padding-top: 1.5vh;
+    font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+    color: var(--color-lineas);
+}
+
+/* RESPONSIVIDAD */
+
+/* Pantallas medianas-grandes */
+@media (max-width: 1200px) {
+    .encabezado-principal {
+        padding: 1.5vh 3vw;
+    }
+
+    .navegacion-principal {
+        gap: 1.5vw;
+    }
+
+    .enlace-menu {
+        font-size: 1.2vw;
+    }
+
+    .boton-donar-encabezado {
+        padding: 0.8vh 1vw;
+        font-size: 0.9vw;
+    }
+}
+
+/* Tableta grande — menú hamburguesa */
+@media (max-width: 1000px) {
+    .encabezado-principal {
+        position: sticky;
+        top: 0;
+        padding: 1.5vh 5vw;
+    }
+
+    .boton-hamburguesa {
+        display: block;
+        font-size: 5vw;
+    }
+
+    .navegacion-principal {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: var(--color-blanco);
+        border-top: 1px solid var(--color-lineas);
+        border-bottom: 2px solid var(--color-lineas);
+        padding: 1vh 5vw;
+        gap: 0;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        z-index: 99;
+    }
+
+    .enlace-menu {
+        display: block;
+        padding: 1.5vh 0;
+        border-bottom: 1px solid var(--color-gris-fondo);
+        font-size: 4vw;
+        color: var(--color-azul-medio);
+    }
+
+    .boton-donar-encabezado {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5vh;
+        margin-bottom: 1vh;
+        padding: 1.5vh 5vw;
+        font-size: 4vw;
+        border-radius: 6px;
+    }
+
+    .casilla-menu:checked ~ .navegacion-principal {
+        display: flex;
+    }
+
+    .banner-principal {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cuadricula-pie {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagen-logo-encabezado {
+        max-width: 3rem;
+        height: auto;
+    }
+
+    .texto-logo {
+        font-size: 2vw;
+    }
+}
+
+/* Tableta pequeña */
+@media (max-width: 800px) {
+    .banner-principal {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .contenedor-imagen-banner {
+        height: 35vh;
+    }
+
+    .contenedor-texto-banner {
+        padding: 4vh 6vw;
+    }
+
+    .cuadricula-impacto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cuadricula-programas,
+    .cuadricula-historias,
+    .cuadricula-donar {
+        grid-template-columns: 1fr;
+    }
+
+    .cuadricula-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .cuadricula-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foto-egresado {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .circulo-icono {
+        width: 8vw;
+        height: 8vw;
+        font-size: 4vw;
+    }
+
+    .formulario-contacto {
+        max-width: 80vw;
+    }
+
+    .bloque-transparencia {
+        max-width: 80vw;
+    }
+
+    .formulario-boletin {
+        max-width: 70vw;
+    }
+}
+
+/* Tableta-móvil */
+@media (max-width: 768px) {
+    .cuadricula-videos {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+
+/* Móvil grande */
+@media (max-width: 600px) {
+    .cuadricula-impacto,
+    .cuadricula-pie {
+        grid-template-columns: 1fr;
+    }
+
+    .cuadricula-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cuadricula-servicios {
+        grid-template-columns: 1fr;
+    }
+    
+
+    .formulario-boletin {
+        flex-direction: column;
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .entrada-boletin,
+    .boton-boletin {
+        width: 100%;
+    }
+    .tarjeta-impacto {
+        border: none;
+    }
+    .icono-impacto {
+        font-size: 6vw;
+    }
+}
+
+
+/* Móvil pequeño */
+@media (max-width: 500px) {
+    section {
+        padding: 4vh 4vw;
+    }
+
+    .contenedor-imagen-banner {
+        height: 25vh;
+    }
+
+    .bloque-botones-banner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boton-lleno,
+    .boton-linea {
+        text-align: center;
+        width: 100%;
+        padding: 1.5vh 4vw;
+    }
+
+    .formulario-contacto {
+        padding: 3vh 4vw;
+        max-width: 92vw;
+    }
+
+    .texto-logo {
+        font-size: 3vw;
+    }
+
+    .imagen-logo-encabezado {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .foto-egresado {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .circulo-icono {
+        width: 12vw;
+        height: 12vw;
+        font-size: 6vw;
+    }
+
+    .tarjeta-impacto {
+        border: none;
+    }
+
+    .icono-impacto {
+        font-size: 6vw;
+    }
+}
